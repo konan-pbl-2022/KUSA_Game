@@ -20,5 +20,6 @@ public class ExampleUnitTest {
 
         System.out.println("石川奏穂");
 
+        System.out.println("山口颯斗");
     }
 }
