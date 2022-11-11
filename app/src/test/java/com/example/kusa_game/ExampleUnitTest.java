@@ -13,6 +13,10 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
+ 
         System.out.println("岸田祥輝");
+
+        System.out.println("三浦大輝");
+
     }
 }
