@@ -21,7 +21,7 @@ public class Game4 extends AppCompatActivity {
 
 
     //ゲーム画面に移動するボタンの設定
-        Button button1 = (Button) findViewById(R.id.StartGame4Button);
+        Button button1 = (Button) findViewById(R.id.setumei4Button);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +31,7 @@ public class Game4 extends AppCompatActivity {
         });
 
     //説明画面に移動するボタンの設定
-        Button button2 = (Button) findViewById(R.id.Backgame4Button);
+        Button button2 = (Button) findViewById(R.id.setumei4Button);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
