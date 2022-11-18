@@ -60,7 +60,7 @@ public class Game1 extends AppCompatActivity {
             TextView textView = findViewById(R.id.iai);
             textView.setText("見切れ!!居合道");
 
-            @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageView imageView = findViewById(R.id.imageView_title);
+            @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageView imageView = findViewById(R.id.imageView);
             imageView.setImageResource(R.drawable.nc77895);
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
 
@@ -99,7 +99,7 @@ public class Game1 extends AppCompatActivity {
                 }
             });
 
-        }
+
     }
         private void audioStop() {
             // 再生終了
