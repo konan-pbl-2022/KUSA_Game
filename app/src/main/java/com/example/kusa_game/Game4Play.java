@@ -57,7 +57,7 @@ public class Game4Play extends AppCompatActivity {
 
         //爆弾を選び、クリック出来るようにするための設定
 
-        final ImageButton imageButton = (ImageButton) findViewById(R.id.BombButton1);
+        ImageButton imageButton = (ImageButton) findViewById(R.id.BombButton1);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
