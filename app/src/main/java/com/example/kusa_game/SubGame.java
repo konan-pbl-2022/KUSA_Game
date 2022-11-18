@@ -12,6 +12,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -19,6 +20,7 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
+
 
 public class SubGame extends AppCompatActivity {
     private MediaPlayer option1 = new MediaPlayer();
@@ -55,12 +57,12 @@ public class SubGame extends AppCompatActivity {
         textView_result.setText((zero));
         textView_action = findViewById(R.id.action);
         textView_action.setText((zero));
-        final Button next_stage_Button = findViewById(R.id.next);
+        Button next_stage_Button = findViewById(R.id.next);
         next_stage_Button.setVisibility(View.GONE);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) final Button back_Button = findViewById(R.id.back);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button back_Button = findViewById(R.id.back);
         back_Button.setVisibility(View.GONE);
 
-        line = random.nextInt(400) + 500;
+        line = random.nextInt(400)+500;
 
         timer = new Timer();
 
@@ -68,7 +70,8 @@ public class SubGame extends AppCompatActivity {
 
         timer.schedule(timerTask, delay, period);
 
-        try (AssetFileDescriptor afdescripter = getAssets().openFd(filePath_start)) {
+        try(AssetFileDescriptor afdescripter = getAssets().openFd(filePath_start))
+        {
             option1.setDataSource(afdescripter.getFileDescriptor(),
                     afdescripter.getStartOffset(),
                     afdescripter.getLength());
@@ -80,12 +83,12 @@ public class SubGame extends AppCompatActivity {
         }
 
 
-        if (count == 100) {
+        if( count == 100 ) {
             option1.setLooping(true);
             option1.start();
         }
 
-        if (count == 300) {
+        if( count == 300 ) {
             option1.stop();
             option1.reset();
             // リソースの解放
@@ -102,8 +105,8 @@ public class SubGame extends AppCompatActivity {
 
 
 
-
-        /*Button startButton = findViewById(R.id.start_b);
+/*
+        Button startButton = findViewById(R.id.start_b);
         startButton.setOnClickListener(v -> {
             if (null != timer) {
                 timer.cancel();
@@ -137,74 +140,74 @@ public class SubGame extends AppCompatActivity {
         }*/
 
 
-        final Button stopButton = findViewById(R.id.stop_b);
+
+
+        Button stopButton = findViewById(R.id.stop_b);
         stopButton.setOnClickListener(v -> {
-            if (null != timer) {
-                timer.cancel();
-                result = count;
-                if (enemy > result && result >= line) {
-                    //textView2 = findViewById(R.id.result_up);
+            //if(null != timer) {
+            timer.cancel();
+            result = count;
+            if( enemy > result && result >= line) {
+                //textView2 = findViewById(R.id.result_up);
 
-                    textView_result.setText("You win");
-                    stopButton.setVisibility(View.INVISIBLE);
-                    next_stage_Button.setVisibility(View.VISIBLE);
-                    next_stage_Button.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            count = 0;
-                            line = random.nextInt(400) + 500;
-                            next_stage_Button.setVisibility(View.GONE);
-                            stopButton.setVisibility(View.VISIBLE);
-                            textView_result.setText((zero));
-                            textView_action.setText((zero));
-                            timer = new Timer();
+                textView_result.setText("You win");
+                stopButton.setVisibility(View.INVISIBLE);
+                next_stage_Button.setVisibility(View.VISIBLE);
+                next_stage_Button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        count = 0;
+                        line = random.nextInt(400)+500;
+                        next_stage_Button.setVisibility(View.GONE);
+                        stopButton.setVisibility(View.VISIBLE);
+                        textView_result.setText((zero));
+                        textView_action.setText((zero));
+                        timer = new Timer();
 
-                            timerTask = new CountUpTimerTask();
+                        timerTask = new CountUpTimerTask();
 
-                            timer.schedule(timerTask, delay, period);
+                        timer.schedule(timerTask, delay, period);
 
-                            if (stage == 1) {
-                                stage = 2;
-                            } else if (stage == 2) {
-                                stage = 3;
-                            }
+                        if( stage == 1) {
+                            stage = 2;
+                        } else if( stage == 2) {
+                            stage = 3;
                         }
-                    });
+                    }
+                });
 
-                } else if (result < line) {
-                    textView_result.setText("仕切り直し");
-                    stopButton.setVisibility(View.INVISIBLE);
-                    back_Button.setVisibility(View.VISIBLE);
-                    back_Button.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            count = 0;
-                            line = random.nextInt(400) + 500;
-                            back_Button.setVisibility(View.GONE);
-                            stopButton.setVisibility(View.VISIBLE);
-                            textView_action.setText((zero));
-                            textView_result.setText((zero));
-                            timer = new Timer();
+            } else if ( result < line ) {
+                textView_result.setText("仕切り直し");
+                stopButton.setVisibility(View.INVISIBLE);
+                back_Button.setVisibility(View.VISIBLE);
+                back_Button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        count = 0;
+                        line = random.nextInt(400)+500;
+                        back_Button.setVisibility(View.GONE);
+                        stopButton.setVisibility(View.VISIBLE);
+                        textView_action.setText((zero));
+                        textView_result.setText((zero));
+                        timer = new Timer();
 
-                            timerTask = new CountUpTimerTask();
+                        timerTask = new CountUpTimerTask();
 
-                            timer.schedule(timerTask, delay, period);
+                        timer.schedule(timerTask, delay, period);
 
 
-                        }
-                    });
+                    }
+                });
 
-                }
-                //timer = null;
-                //textView_timer.setText((zero));
-                //}
             }
-
-
+            //timer = null;
+            //textView_timer.setText((zero));
+            //}
         });
+
+
+
     }
-
-
 
     class CountUpTimerTask extends TimerTask {
         Button back_Button = findViewById(R.id.back);
