@@ -15,29 +15,19 @@ public class Game4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game4);
 
-        //ゲームのタイトルを表示
-        TextView textView = (TextView)findViewById(R.id.titleView);
 
-
-
-    //ゲーム画面に移動するボタンの設定
-        Button button1 = (Button) findViewById(R.id.setumei4Button);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent =new Intent(Game4.this,Game4Play.class);
-                startActivity(intent);
-            }
+//ゲーム画面に移動するボタンの設定
+        Button button1 = findViewById(R.id.button1);
+        button1.setOnClickListener(view -> {
+            Intent intent = new Intent(Game4.this, Game4Play.class);
+            startActivity(intent);
         });
 
-    //説明画面に移動するボタンの設定
-        Button button2 = (Button) findViewById(R.id.setumei4Button);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                TextView textView1 = (TextView) findViewById(R.id.setumeiView);
-                textView1.setText("説明");
-            }
+//説明画面に移動するボタンの設定
+        Button button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(view -> {
+            TextView textView = findViewById(R.id.textView2);
+            textView.setText("説明");
         });
     }
 }

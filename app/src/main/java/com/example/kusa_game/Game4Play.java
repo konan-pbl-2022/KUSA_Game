@@ -2,6 +2,7 @@ package com.example.kusa_game;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -45,42 +46,42 @@ public class Game4Play extends AppCompatActivity {
         //クリア時に表示する画像。
 
         //ゲーム画面からタイトルへ戻るボタンの設定
-//        Button button5 = (Button) findViewById(R.id.Backgame4Button);
-//        button5.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Game4Play.this, Game4.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        //爆弾を選び、クリック出来るようにするための設定
-//
-//        final ImageButton imageButton = (ImageButton) findViewById(R.id.BombButton1);
-//        imageButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                if (random != bomb1){
-//                    imageButton.setImageResource(R.drawable.safe);
-//                }else{
-//                    imageView.setVisibility(View.VISIBLE);
-//                }
-//
-//            }
-//        });
-//
-//        ImageButton imageButton1 = (ImageButton) findViewById(R.id.BombButton2);
-//        imageButton1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                if ( random != bomb2){
-//                    imageButton.setImageResource(R.drawable.safe);
-//                }else{
-//                    imageView.setVisibility(View.VISIBLE);
-//                }
-//
-//            }
-//        });
+        Button button5 = (Button) findViewById(R.id.Backgame4Button);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Game4Play.this, Game4.class);
+                startActivity(intent);
+            }
+        });
+
+        //爆弾を選び、クリック出来るようにするための設定
+
+        final ImageButton imageButton = (ImageButton) findViewById(R.id.BombButton1);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (random != bomb1){
+                    imageButton.setImageResource(R.drawable.safe);
+                }else{
+                    imageView.setVisibility(View.VISIBLE);
+                }
+
+            }
+        });
+
+        ImageButton imageButton1 = (ImageButton) findViewById(R.id.BombButton2);
+        imageButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if ( random != bomb2){
+                    imageButton1.setImageResource(R.drawable.safe);
+                }else{
+                    imageView.setVisibility(View.VISIBLE);
+                }
+
+            }
+        });
 
     }
 }
