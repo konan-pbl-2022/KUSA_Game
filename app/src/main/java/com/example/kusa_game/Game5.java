@@ -18,6 +18,7 @@ public class Game5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game5);
 
+
         final TextView text = (TextView) findViewById(R.id.text);
         final TextView subtext = (TextView) findViewById(R.id.subtext);
         ImageButton rock = (ImageButton) findViewById(R.id.rock);
@@ -77,5 +78,6 @@ public class Game5 extends AppCompatActivity {
             decision = "勝ち";
         else decision = "負け";
         decidetext.setText(decision);
+
     }
 }
