@@ -7,7 +7,7 @@
     tools:context=".Game4Play">
 
     <TextView
-        android:id="@+id/commandtitle"
+        android:id="@+id/titleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="爆発しない爆弾を選べ！"
@@ -42,7 +42,7 @@
         app:srcCompat="@drawable/bombimage" />
 
     <Button
-        android:id="@+id/BackGame4Button"
+        android:id="@+id/setumei4Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
