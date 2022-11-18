@@ -6,4 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".Game5">
 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:text="じゃんけん"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="最初はグー"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/rock"
+            android:layout_width="wrap_content"
+            android:layout_height="152dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gu" />
+
+        <ImageButton
+            android:id="@+id/scissors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/tyoki" />
+
+        <ImageButton
+            android:id="@+id/paper"
+            android:layout_width="wrap_content"
+            android:layout_height="152dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/pa" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
