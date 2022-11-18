@@ -16,7 +16,7 @@ public class Game4 extends AppCompatActivity {
         setContentView(R.layout.activity_game4);
 
         //ゲームのタイトルを表示
-        final TextView textView = (TextView)findViewById(R.id.titleView);
+        TextView textView = (TextView)findViewById(R.id.titleView);
 
 
 
@@ -25,7 +25,7 @@ public class Game4 extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Game4.this, Game4Play.class);
+                Intent intent =new Intent(Game4.this,Game4Play.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class Game4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 TextView textView1 = (TextView) findViewById(R.id.setumeiView);
-                textView.setText("説明");
+                textView1.setText("説明");
             }
         });
     }
