@@ -36,9 +36,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
-        android:background="#4C01D3"
+        android:background="#BDAADD"
         android:text="居合!!"
-        android:textColor="#E60808"
+        android:textColor="#9C0101"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -264,5 +264,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.696"
         app:srcCompat="@drawable/marisa_lose" />
+
+    <ImageView
+        android:id="@+id/oharai"
+        android:layout_width="110dp"
+        android:layout_height="193dp"
+        android:rotation="62"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/お祓い棒" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

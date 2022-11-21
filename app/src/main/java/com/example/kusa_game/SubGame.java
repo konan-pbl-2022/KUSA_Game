@@ -52,6 +52,7 @@ public class SubGame extends AppCompatActivity {
     private ImageView image_remiria_lose = findViewById(R.id.remiria_lose);
     private ImageView image_marisa_win = findViewById(R.id.marisa_win);
     private ImageView image_marisa_lose = findViewById(R.id.marisa_lose);
+    private ImageView image_oharai = findViewById(R.id.oharai);
     private Bitmap bitmap_RS = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_start);
     private Matrix matrix_reimu_start = new Matrix();
     private Bitmap bitmap_reimu_start = Bitmap.createBitmap(bitmap_RS, 0, 0, bitmap_RS.getWidth(), bitmap_RS.getHeight(), matrix_reimu_start, false);
@@ -79,7 +80,7 @@ public class SubGame extends AppCompatActivity {
     private Drawable Drawable_remiria_lose = getResources().getDrawable(R.drawable.remiria_lose);
     private Drawable Drawable_marisa_win = getResources().getDrawable(R.drawable.marisa_win);
     private Drawable Drawable_marisa_lose = getResources().getDrawable(R.drawable.marisa_lose);
-
+    private Drawable Drawable_oharai = getResources().getDrawable(R.drawable.お祓い棒);
 
     @SuppressLint("MissingInflatedId")
     public void onCreate(Bundle saveInstanceState) {
@@ -99,6 +100,7 @@ public class SubGame extends AppCompatActivity {
 
         ImageView imageView_game1 = findViewById(R.id.imageView_game1);
         imageView_game1.setImageResource(R.drawable.nc77380);
+
 
         /*ImageView image_reimu_start = findViewById(R.id.reimu_start);*/
         //Drawable Drawable_reimu = getResources().getDrawable(R.drawable.reimu);
@@ -199,7 +201,8 @@ public class SubGame extends AppCompatActivity {
         image_marisa_lose.setImageDrawable(Drawable_marisa_lose);
         image_marisa_lose.setVisibility(View.INVISIBLE);
 
-
+        image_oharai.setImageDrawable(Drawable_oharai);
+        image_oharai.setVisibility(View.INVISIBLE);
 
         /*textView_timer = findViewById(R.id.timer);
         textView_timer.setText((zero));*/
@@ -273,6 +276,7 @@ public class SubGame extends AppCompatActivity {
                 }else if(stage == 3) {
                     image_reimu_win3.setVisibility(View.VISIBLE);
                     image_reimu_start.setVisibility(View.INVISIBLE);
+                    image_oharai.setVisibility(View.VISIBLE);
                     image_marisa_start.setVisibility(View.INVISIBLE);
                     image_marisa_lose.setVisibility(View.VISIBLE);
                 }
@@ -308,7 +312,8 @@ public class SubGame extends AppCompatActivity {
                             /*  image_reimu_win2.setVisibility(View.INVISIBLE);
                             image_reimu_start.setVisibility(View.VISIBLE);
                             image_remiria_lose.setVisibility(View.INVISIBLE);
-                            image_marisa_start.setVisibility(View.VISIBLE);*/
+                            image_marisa_start.setVisibility(View.VISIBLE);
+                            */
                         } if( stage == 3 ) {
                             count = 3000;
 
