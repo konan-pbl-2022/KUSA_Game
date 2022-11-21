@@ -309,6 +309,15 @@ public class SubGame extends AppCompatActivity {
                             image_reimu_start.setVisibility(View.VISIBLE);
                             image_remiria_lose.setVisibility(View.INVISIBLE);
                             image_marisa_start.setVisibility(View.VISIBLE);*/
+                        } if( stage == 3 ) {
+                            count = 3000;
+
+                            timer = new Timer();
+
+                            timerTask = new CountUpTimerTask();
+
+                            timer.schedule(timerTask, delay, period);
+                            
                         }
                     }
                 });
@@ -346,7 +355,7 @@ public class SubGame extends AppCompatActivity {
     }
 
     class CountUpTimerTask extends TimerTask {
-        Button back_Button = findViewById(R.id.back);
+        //Button back_Button = findViewById(R.id.back);
 
 
         @Override
@@ -429,6 +438,13 @@ public class SubGame extends AppCompatActivity {
                     });
                     */
                 }
+
+                /*if( count == 3500 ) {
+                    Intent intent_back = new Intent(SubGame.this,Game1.class);
+                    intent_back.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_back.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(intent_back);
+                }*/
 
             });
         }
