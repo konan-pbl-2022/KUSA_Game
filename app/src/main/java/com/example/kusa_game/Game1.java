@@ -99,6 +99,19 @@ public class Game1 extends AppCompatActivity {
                 }
             });
 
+            /*Button Button_exit = (Button) findViewById(R.id.exit);
+            Button_exit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent_back_main = new Intent(Game1.this,MainActivity.class);
+                    intent_back_main.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_back_main.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(intent_back_main);
+                }
+            });*/
+
+
+
 
     }
         private void audioStop() {
