@@ -37,7 +37,48 @@ public class SubGame extends AppCompatActivity {
     private String zero;
     private Random random = new Random();
 
-
+    private ImageView image_reimu_start = findViewById(R.id.reimu_start);
+    private ImageView image_tiruno_start = findViewById(R.id.tiruno_start);
+    private ImageView image_remiria_start = findViewById(R.id.remiria_start);
+    private ImageView image_marisa_start = findViewById(R.id.marisa_start);
+    private ImageView image_reimu_lose1 = findViewById(R.id.reimu_lose1);
+    private ImageView image_reimu_win1 = findViewById(R.id.reimu_win1);
+    private ImageView image_reimu_lose2 = findViewById(R.id.reimu_lose2);
+    private ImageView image_reimu_win2 = findViewById(R.id.reimu_win2);
+    private ImageView image_reimu_win3 = findViewById(R.id.reimu_win3);
+    private ImageView image_tiruno_win = findViewById(R.id.tiruno_win);
+    private ImageView image_tiruno_lose = findViewById(R.id.tiruno_lose);
+    private ImageView image_remiria_win = findViewById(R.id.remiria_win);
+    private ImageView image_remiria_lose = findViewById(R.id.remiria_lose);
+    private ImageView image_marisa_win = findViewById(R.id.marisa_win);
+    private ImageView image_marisa_lose = findViewById(R.id.marisa_lose);
+    private Bitmap bitmap_RS = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_start);
+    private Matrix matrix_reimu_start = new Matrix();
+    private Bitmap bitmap_reimu_start = Bitmap.createBitmap(bitmap_RS, 0, 0, bitmap_RS.getWidth(), bitmap_RS.getHeight(), matrix_reimu_start, false);
+    private Bitmap bitmap_RL1 = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_lose1);
+    private Matrix matrix_reimu_lose1 = new Matrix();
+    private Bitmap bitmap_reimu_lose1 = Bitmap.createBitmap(bitmap_RL1, 0, 0, bitmap_RL1.getWidth(), bitmap_RL1.getHeight(), matrix_reimu_lose1, false);
+    private Bitmap bitmap_RW1 = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_win1);
+    private Matrix matrix_reimu_win1 = new Matrix();
+    private Bitmap bitmap_reimu_win1 = Bitmap.createBitmap(bitmap_RW1, 0, 0, bitmap_RW1.getWidth(), bitmap_RW1.getHeight(), matrix_reimu_win1, false);
+    private Bitmap bitmap_RL2 = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_lose2);
+    private Matrix matrix_reimu_lose2 = new Matrix();
+    private Bitmap bitmap_reimu_lose2 = Bitmap.createBitmap(bitmap_RL2, 0, 0, bitmap_RL2.getWidth(), bitmap_RL2.getHeight(), matrix_reimu_lose2, false);
+    private Bitmap bitmap_RW2 = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_win2);
+    private Matrix matrix_reimu_win2 = new Matrix();
+    private Bitmap bitmap_reimu_win2 = Bitmap.createBitmap(bitmap_RW2, 0, 0, bitmap_RW2.getWidth(), bitmap_RW2.getHeight(), matrix_reimu_win2, false);
+    private Bitmap bitmap_RW3 = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_win3);
+    private Matrix matrix_reimu_win3 = new Matrix();
+    private Bitmap bitmap_reimu_win3 = Bitmap.createBitmap(bitmap_RW3, 0, 0, bitmap_RW3.getWidth(), bitmap_RW3.getHeight(), matrix_reimu_win3, false);
+    private Drawable Drawable_tiruno_start = getResources().getDrawable(R.drawable.tiruno_start);
+    private Drawable Drawable_remiria_start= getResources().getDrawable(R.drawable.remiria_start);
+    private Drawable Drawable_marisa_start = getResources().getDrawable(R.drawable.marisa_start);
+    private Drawable Drawable_tiruno_win = getResources().getDrawable(R.drawable.tiruno_win);
+    private Drawable Drawable_tiruno_lose = getResources().getDrawable(R.drawable.tiruno_lose);
+    private Drawable Drawable_remiria_win = getResources().getDrawable(R.drawable.remiria_win);
+    private Drawable Drawable_remiria_lose = getResources().getDrawable(R.drawable.remiria_lose);
+    private Drawable Drawable_marisa_win = getResources().getDrawable(R.drawable.marisa_win);
+    private Drawable Drawable_marisa_lose = getResources().getDrawable(R.drawable.marisa_lose);
 
 
     @SuppressLint("MissingInflatedId")
@@ -59,63 +100,109 @@ public class SubGame extends AppCompatActivity {
         ImageView imageView_game1 = findViewById(R.id.imageView_game1);
         imageView_game1.setImageResource(R.drawable.nc77380);
 
-        ImageView image_reimu = findViewById(R.id.reimu);
+        /*ImageView image_reimu_start = findViewById(R.id.reimu_start);*/
         //Drawable Drawable_reimu = getResources().getDrawable(R.drawable.reimu);
         //image_reimu.setImageDrawable(Drawable_reimu);
-        Bitmap bitmap_R = BitmapFactory.decodeResource(getResources(), R.drawable.reimu);
-        Matrix matrix_reimu = new Matrix();
-        matrix_reimu.preScale(-1, 1);
-        Bitmap bitmap_reimu = Bitmap.createBitmap(bitmap_R, 0, 0, bitmap_R.getWidth(), bitmap_R.getHeight(), matrix_reimu, false);
-        image_reimu.setImageBitmap(bitmap_reimu);
+        /*Bitmap bitmap_RS = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_start);*/
+        /*Matrix matrix_reimu_start = new Matrix();*/
+        matrix_reimu_start.preScale(-1, 1);
+        /*Bitmap bitmap_reimu_start = Bitmap.createBitmap(bitmap_RS, 0, 0, bitmap_RS.getWidth(), bitmap_RS.getHeight(), matrix_reimu_start, false);*/
+        image_reimu_start.setImageBitmap(bitmap_reimu_start);
 
 
-        ImageView image_tiruno = findViewById(R.id.tiruno_start);
-        ImageView image_remiria = findViewById(R.id.remiria_start);
-        ImageView image_marisa = findViewById(R.id.marisa_start);
-        Drawable Drawable_enemy = getResources().getDrawable(R.drawable.tiruno_before);
-        Drawable Drawable_enemy_2 = getResources().getDrawable(R.drawable.remiria_start);
-        Drawable Drawable_enemy_3 = getResources().getDrawable(R.drawable.marisa_start);
-        image_tiruno.setImageDrawable(Drawable_enemy);
-        image_remiria.setImageDrawable(Drawable_enemy_2);
-        image_marisa.setImageDrawable(Drawable_enemy_3);
+        /*ImageView image_tiruno_start = findViewById(R.id.tiruno_start);
+        ImageView image_remiria_start = findViewById(R.id.remiria_start);
+        ImageView image_marisa_start = findViewById(R.id.marisa_start);*/
+        /*Drawable Drawable_tiruno_start = getResources().getDrawable(R.drawable.tiruno_start);*/
+        /*Drawable Drawable_remiria_start= getResources().getDrawable(R.drawable.remiria_start);*/
+        /*Drawable Drawable_marisa_start = getResources().getDrawable(R.drawable.marisa_start);*/
+        image_tiruno_start.setImageDrawable(Drawable_tiruno_start);
+        image_remiria_start.setImageDrawable(Drawable_remiria_start);
+        image_marisa_start.setImageDrawable(Drawable_marisa_start);
 
         if( stage == 1 ) {
-            image_tiruno.setVisibility(View.VISIBLE);
-            image_remiria.setVisibility(View.INVISIBLE);
-            image_marisa.setVisibility(View.INVISIBLE);
+            image_tiruno_start.setVisibility(View.VISIBLE);
+            image_remiria_start.setVisibility(View.INVISIBLE);
+            image_marisa_start.setVisibility(View.INVISIBLE);
         }else if(stage == 2) {
-            image_tiruno.setVisibility(View.INVISIBLE);
-            image_remiria.setVisibility(View.VISIBLE);
-            image_marisa.setVisibility(View.INVISIBLE);
+            image_tiruno_start.setVisibility(View.INVISIBLE);
+            image_remiria_start.setVisibility(View.VISIBLE);
+            image_marisa_start.setVisibility(View.INVISIBLE);
         }else if(stage == 3) {
-            image_tiruno.setVisibility(View.INVISIBLE);
-            image_remiria.setVisibility(View.INVISIBLE);
-            image_marisa.setVisibility(View.VISIBLE);
+            image_tiruno_start.setVisibility(View.INVISIBLE);
+            image_remiria_start.setVisibility(View.INVISIBLE);
+            image_marisa_start.setVisibility(View.VISIBLE);
         }
 
             //image_enemy.setImageDrawable(Drawable_enemy);
 
 
 
-        ImageView image_reimu_after = findViewById(R.id.reimu_after);
-        //Drawable Drawable_reimu = getResources().getDrawable(R.drawable.reimu);
-        //image_reimu.setImageDrawable(Drawable_reimu);
-        Bitmap bitmap_RA = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_after);
-        Matrix matrix_reimu_after = new Matrix();
-        matrix_reimu_after.preScale(-1, 1);
-        Bitmap bitmap_reimu_after = Bitmap.createBitmap(bitmap_RA, 0, 0, bitmap_RA.getWidth(), bitmap_RA.getHeight(), matrix_reimu_after, false);
-        image_reimu_after.setImageBitmap(bitmap_reimu_after);
-        image_reimu_after.setVisibility(View.INVISIBLE);
+        /*ImageView image_reimu_win1 = findViewById(R.id.reimu_win1);*/
+        //Drawable Drawable_reimu_win1 = getResources().getDrawable(R.drawable.reimu_win1);
+        //image_reimu_win1.setImageDrawable(Drawable_reimu_win1);
+        /*Bitmap bitmap_RW1 = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_win1);*/
+        /*Matrix matrix_reimu_win1 = new Matrix();*/
+        matrix_reimu_win1.preScale(-1, 1);
+        /*Bitmap bitmap_reimu_win1 = Bitmap.createBitmap(bitmap_RW1, 0, 0, bitmap_RW1.getWidth(), bitmap_RW1.getHeight(), matrix_reimu_win1, false);*/
+        image_reimu_win1.setImageBitmap(bitmap_reimu_win1);
+        image_reimu_win1.setVisibility(View.INVISIBLE);
 
-        ImageView image_enemy_after = findViewById(R.id.enemy_after);
-        Drawable Drawable_enemy_after = getResources().getDrawable(R.drawable.tiruno_after);
-        image_enemy_after.setImageDrawable(Drawable_enemy_after);
-        image_enemy_after.setVisibility(View.INVISIBLE);
+        /*ImageView image_reimu_win2 = findViewById(R.id.reimu_win2);*/
+        //Drawable Drawable_reimu_win2 = getResources().getDrawable(R.drawable.reimu_win2);
+        //image_reimu_win2.setImageDrawable(Drawable_reimu_win2);
+        /*Bitmap bitmap_RW2 = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_win2);*/
+        /*Matrix matrix_reimu_win2 = new Matrix();*/
+        matrix_reimu_win2.preScale(-1, 1);
+        /*Bitmap bitmap_reimu_win2 = Bitmap.createBitmap(bitmap_RW2, 0, 0, bitmap_RW2.getWidth(), bitmap_RW2.getHeight(), matrix_reimu_win2, false);*/
+        image_reimu_win2.setImageBitmap(bitmap_reimu_win2);
+        image_reimu_win2.setVisibility(View.INVISIBLE);
+
+        /*ImageView image_reimu_win3 = findViewById(R.id.reimu_win3);*/
+        //Drawable Drawable_reimu_win3 = getResources().getDrawable(R.drawable.reimu_win3);
+        //image_reimu_win3.setImageDrawable(Drawable_reimu_win3);
+        /*Bitmap bitmap_RW3 = BitmapFactory.decodeResource(getResources(), R.drawable.reimu_win3);*/
+        /*Matrix matrix_reimu_win3 = new Matrix();*/
+        matrix_reimu_win3.preScale(-1, 1);
+        /*Bitmap bitmap_reimu_win3 = Bitmap.createBitmap(bitmap_RW3, 0, 0, bitmap_RW3.getWidth(), bitmap_RW3.getHeight(), matrix_reimu_win3, false);*/
+        image_reimu_win3.setImageBitmap(bitmap_reimu_win3);
+        image_reimu_win3.setVisibility(View.INVISIBLE);
+
+
+        /*ImageView image_tiruno_win = findViewById(R.id.tiruno_win);*/
+        /*Drawable Drawable_tiruno_win = getResources().getDrawable(R.drawable.tiruno_win);*/
+        image_tiruno_win.setImageDrawable(Drawable_tiruno_win);
+        image_tiruno_win.setVisibility(View.INVISIBLE);
+
+        /*ImageView image_tiruno_lose = findViewById(R.id.tiruno_lose);*/
+        /*Drawable Drawable_tiruno_lose = getResources().getDrawable(R.drawable.tiruno_lose);*/
+        image_tiruno_lose.setImageDrawable(Drawable_tiruno_lose);
+        image_tiruno_lose.setVisibility(View.INVISIBLE);
+
+        /*ImageView image_remiria_win = findViewById(R.id.remiria_win);*/
+        /*Drawable Drawable_remiria_win = getResources().getDrawable(R.drawable.remiria_win);*/
+        image_remiria_win.setImageDrawable(Drawable_remiria_win);
+        image_remiria_win.setVisibility(View.INVISIBLE);
+
+        /*ImageView image_remiria_lose = findViewById(R.id.remiria_lose);*/
+        /*Drawable Drawable_remiria_lose = getResources().getDrawable(R.drawable.remiria_lose);*/
+        image_remiria_lose.setImageDrawable(Drawable_remiria_lose);
+        image_remiria_lose.setVisibility(View.INVISIBLE);
+
+        /*ImageView image_marisa_win = findViewById(R.id.marisa_win);*/
+        /*Drawable Drawable_marisa_win = getResources().getDrawable(R.drawable.marisa_win);*/
+        image_marisa_win.setImageDrawable(Drawable_marisa_win);
+        image_marisa_win.setVisibility(View.INVISIBLE);
+
+        /*ImageView image_marisa_lose = findViewById(R.id.marisa_lose);*/
+        /*Drawable Drawable_marisa_lose = getResources().getDrawable(R.drawable.marisa_lose);*/
+        image_marisa_lose.setImageDrawable(Drawable_marisa_lose);
+        image_marisa_lose.setVisibility(View.INVISIBLE);
 
 
 
-        textView_timer = findViewById(R.id.timer);
-        textView_timer.setText((zero));
+        /*textView_timer = findViewById(R.id.timer);
+        textView_timer.setText((zero));*/
         textView_result = findViewById(R.id.result_up);
         textView_result.setText((zero));
         textView_action = findViewById(R.id.action);
@@ -170,10 +257,26 @@ public class SubGame extends AppCompatActivity {
 
                 textView_result.setText("You win");
 
-                image_reimu_after.setVisibility(View.VISIBLE);
-                image_enemy_after.setVisibility(View.VISIBLE);
-                image_reimu.setVisibility(View.INVISIBLE);
-                image_tiruno.setVisibility(View.INVISIBLE);
+            /*
+
+
+                if( stage == 1 ) {
+                    image_reimu_win1.setVisibility(View.VISIBLE);
+                    image_reimu_start.setVisibility(View.INVISIBLE);
+                    image_tiruno_start.setVisibility(View.INVISIBLE);
+                    image_tiruno_lose.setVisibility(View.VISIBLE);
+                }else if(stage == 2) {
+                    image_reimu_win2.setVisibility(View.VISIBLE);
+                    image_reimu_start.setVisibility(View.INVISIBLE);
+                    image_remiria_start.setVisibility(View.INVISIBLE);
+                    image_remiria_lose.setVisibility(View.VISIBLE);
+                }else if(stage == 3) {
+                    image_reimu_win3.setVisibility(View.VISIBLE);
+                    image_reimu_start.setVisibility(View.INVISIBLE);
+                    image_marisa_start.setVisibility(View.INVISIBLE);
+                    image_marisa_lose.setVisibility(View.VISIBLE);
+                }
+                */
 
                 stopButton.setVisibility(View.INVISIBLE);
                 next_stage_Button.setVisibility(View.VISIBLE);
@@ -185,8 +288,8 @@ public class SubGame extends AppCompatActivity {
 
                         next_stage_Button.setVisibility(View.GONE);
                         stopButton.setVisibility(View.VISIBLE);
-                        textView_result.setText((zero));
-                        textView_action.setText((zero));
+                        /*textView_result.setText((zero));
+                        textView_action.setText((zero));*/
                         timer = new Timer();
 
                         timerTask = new CountUpTimerTask();
@@ -195,13 +298,17 @@ public class SubGame extends AppCompatActivity {
 
                         if( stage == 1) {
                             stage = 2;
-                            image_reimu_after.setVisibility(View.INVISIBLE);
-                            image_enemy_after.setVisibility(View.INVISIBLE);
-                            image_reimu.setVisibility(View.VISIBLE);
-                            image_remiria.setVisibility(View.VISIBLE);
+                        /*  image_reimu_win1.setVisibility(View.INVISIBLE);
+                            image_reimu_start.setVisibility(View.VISIBLE);
+                            image_tiruno_lose.setVisibility(View.INVISIBLE);
+                            image_remiria_start.setVisibility(View.VISIBLE);*/
 
                         } else if( stage == 2) {
                             stage = 3;
+                            /*  image_reimu_win2.setVisibility(View.INVISIBLE);
+                            image_reimu_start.setVisibility(View.VISIBLE);
+                            image_remiria_lose.setVisibility(View.INVISIBLE);
+                            image_marisa_start.setVisibility(View.VISIBLE);*/
                         }
                     }
                 });
@@ -218,8 +325,8 @@ public class SubGame extends AppCompatActivity {
 
                         back_Button.setVisibility(View.GONE);
                         stopButton.setVisibility(View.VISIBLE);
-                        textView_action.setText((zero));
-                        textView_result.setText((zero));
+                        /*textView_action.setText((zero));
+                        textView_result.setText((zero));*/
                         timer = new Timer();
 
                         timerTask = new CountUpTimerTask();
@@ -248,7 +355,7 @@ public class SubGame extends AppCompatActivity {
         public void run() {
             handler.post(() -> {
                 count++;
-                textView_timer.setText(String.format(Locale.US, "%1$02d", count));
+                /*textView_timer.setText(String.format(Locale.US, "%1$02d", count));*/
 
 
 
@@ -281,7 +388,28 @@ public class SubGame extends AppCompatActivity {
                     timer.cancel();
                     textView_result.setText("敗北者じゃけぇ");
 
-                    back_Button.setVisibility(View.VISIBLE);
+                        /*
+
+
+                    if( stage == 1 ) {
+                        image_reimu_lose1.setVisibility(View.VISIBLE);
+                        image_reimu_start.setVisibility(View.INVISIBLE);
+                        image_tiruno_start.setVisibility(View.INVISIBLE);
+                        image_tiruno_win.setVisibility(View.VISIBLE);
+                    }else if(stage == 2) {
+                        image_reimu_lose2.setVisibility(View.VISIBLE);
+                        image_reimu_start.setVisibility(View.INVISIBLE);
+                        image_remiria_start.setVisibility(View.INVISIBLE);
+                        image_remiria_win.setVisibility(View.VISIBLE);
+                    }else if(stage == 3) {
+                        //image_reimu_lose3.setVisibility(View.VISIBLE);
+                        image_reimu_start.setVisibility(View.INVISIBLE);
+                        image_marisa_start.setVisibility(View.INVISIBLE);
+                        image_marisa_win.setVisibility(View.VISIBLE);
+                    }
+                    */
+
+                    /*back_Button.setVisibility(View.VISIBLE);
                     back_Button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -299,6 +427,7 @@ public class SubGame extends AppCompatActivity {
 
                         }
                     });
+                    */
                 }
 
             });
