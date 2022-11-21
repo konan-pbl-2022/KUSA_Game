@@ -27,7 +27,7 @@ import java.io.IOException;
 public class Game1 extends AppCompatActivity {
     private int difficulty_m;
     private MediaPlayer bgm = new MediaPlayer();
-    private String filePath = "魔王魂 旧ゲーム音楽 イベント24.mp3";
+    private String filePath = "魔王魂  イベント24.mp3";
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
