@@ -90,8 +90,8 @@
         android:id="@+id/reimu_start"
         android:layout_width="185dp"
         android:layout_height="221dp"
-        android:layout_marginEnd="260dp"
-        android:layout_marginRight="260dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -124,14 +124,14 @@
 
     <ImageView
         android:id="@+id/remiria_win"
-        android:layout_width="185dp"
-        android:layout_height="221dp"
+        android:layout_width="195dp"
+        android:layout_height="275dp"
         android:layout_marginEnd="224dp"
         android:layout_marginRight="224dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696"
+        app:layout_constraintVertical_bias="0.745"
         app:srcCompat="@drawable/remiria_win" />
 
     <ImageView
@@ -143,7 +143,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695"
+        app:layout_constraintVertical_bias="0.685"
         app:srcCompat="@drawable/remiria_lose" />
 
     <ImageView
@@ -159,14 +159,14 @@
 
     <ImageView
         android:id="@+id/tiruno_start"
-        android:layout_width="210dp"
-        android:layout_height="226dp"
-        android:layout_marginStart="248dp"
-        android:layout_marginLeft="248dp"
+        android:layout_width="192dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673"
+        app:layout_constraintVertical_bias="0.685"
         app:srcCompat="@drawable/tiruno_start" />
 
     <ImageView
@@ -195,14 +195,14 @@
 
     <ImageView
         android:id="@+id/remiria_start"
-        android:layout_width="185dp"
-        android:layout_height="221dp"
+        android:layout_width="195dp"
+        android:layout_height="275dp"
         android:layout_marginStart="236dp"
         android:layout_marginLeft="236dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696"
+        app:layout_constraintVertical_bias="0.745"
         app:srcCompat="@drawable/remiria_start" />
 
     <ImageView
@@ -228,6 +228,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.696"
         app:srcCompat="@drawable/reimu_win2" />
+
+    <ImageView
+        android:id="@+id/reimu_lose3"
+        android:layout_width="185dp"
+        android:layout_height="221dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696"
+        app:srcCompat="@drawable/reimu_lose3" />
 
     <ImageView
         android:id="@+id/marisa_start"
@@ -276,6 +288,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.631"
-        app:srcCompat="@drawable/お祓い棒" />
+        app:srcCompat="@drawable/oharai" />
+
+    <ImageView
+        android:id="@+id/turuhasi"
+        android:layout_width="124dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67"
+        app:srcCompat="@drawable/turuhasi" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="315dp"
+        android:layout_height="69dp"
+        android:text="TextView"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
