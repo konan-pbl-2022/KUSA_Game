@@ -99,7 +99,7 @@ public class Game1 extends AppCompatActivity {
                 }
             });
 
-            /*Button Button_exit = (Button) findViewById(R.id.exit);
+            Button Button_exit = (Button) findViewById(R.id.exit);
             Button_exit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -108,7 +108,7 @@ public class Game1 extends AppCompatActivity {
                     intent_back_main.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                     startActivity(intent_back_main);
                 }
-            });*/
+            });
 
 
 
