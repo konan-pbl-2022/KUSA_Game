@@ -23,16 +23,5 @@ public class Game2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        // ImageViewの用意
-        ImageView myImage = findViewById(R.id.myImage);
-
-// 画像名
-        String imageName = "24581593_l";
-
-// 画像のリソースIDを取得
-        int resId = getResources().getIdentifier(imageName, "drawable", getPackageName());
-
-// ImageViewに画像をセット
-        myImage.setImageResource(resId);
     }
 }
