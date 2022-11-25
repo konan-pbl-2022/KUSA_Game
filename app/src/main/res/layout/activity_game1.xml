@@ -10,9 +10,11 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/nc77895"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nc77895" />
 
     <TextView
         android:id="@+id/iai"
@@ -35,21 +37,21 @@
         android:layout_height="59dp"
         android:background="#51B825"
         android:text="普通"
-        android:textColor="#EA6D0D"
+        android:textColor="#EA7115"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/hard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.938"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/hard"
         android:layout_width="251dp"
         android:layout_height="61dp"
-        android:layout_marginTop="460dp"
         android:background="#51B825"
         android:text="鬼"
         android:textColor="#A30E0E"
@@ -57,10 +59,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/exit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.929" />
 
     <Button
         android:id="@+id/easy"
@@ -76,7 +77,8 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.919" />
+        app:layout_constraintVertical_bias="0.919"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/exit"
@@ -91,5 +93,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.826" />
+        app:layout_constraintVertical_bias="0.826"
+        tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

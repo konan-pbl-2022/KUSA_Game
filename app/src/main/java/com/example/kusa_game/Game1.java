@@ -27,7 +27,7 @@ import java.io.IOException;
 public class Game1 extends AppCompatActivity {
     private int difficulty_m;
     private MediaPlayer bgm = new MediaPlayer();
-    private String filePath = "魔王魂 旧ゲーム音楽 イベント24.mp3";
+    private String filePath = "魔王魂  イベント24.mp3";
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -98,6 +98,19 @@ public class Game1 extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+
+            Button Button_exit = (Button) findViewById(R.id.exit);
+            Button_exit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent_back_main = new Intent(Game1.this,MainActivity.class);
+                    intent_back_main.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_back_main.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(intent_back_main);
+                }
+            });
+
+
 
 
     }
