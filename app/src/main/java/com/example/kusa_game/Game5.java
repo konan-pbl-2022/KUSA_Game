@@ -1,11 +1,13 @@
 package com.example.kusa_game;
 
+import static com.example.kusa_game.R.id.imageView;
 import static com.example.kusa_game.R.id.text;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -58,7 +60,7 @@ public class Game5 extends AppCompatActivity {
     }
 
     String changeTextOpponentHand(int hand) {
-        String handText = "";
+        String handText = "a";
         if (hand == 1) handText = "グー";
         else if (hand == 2) handText = "チョキ";
         else if (hand == 3) handText = "パー";
