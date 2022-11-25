@@ -30,4 +30,6 @@ public class Game4 extends AppCompatActivity {
 //            textView.setText("説明");
 //        });
     }
+    
+
 }
