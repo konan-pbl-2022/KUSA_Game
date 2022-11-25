@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Tapgame"></activity>
         <activity android:name=".Game6" />
         <activity android:name=".Game2_game" />
         <activity android:name=".Game4" />
