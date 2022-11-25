@@ -51,9 +51,12 @@ public class Game3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 numHave = changeText(num2);
-                num2 = set[1];
+                //num2 = set[1];
             }
         });
+
+        num1 = set[0];
+        num2 = set[1];
 
     }
 
@@ -75,7 +78,5 @@ public class Game3 extends AppCompatActivity {
         for(int i=0;i<2;i++) {
             set[i] = rand.nextInt(10) - 5;
         }
-
     }
-
 }
