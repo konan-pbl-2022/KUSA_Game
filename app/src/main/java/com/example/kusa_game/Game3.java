@@ -2,6 +2,7 @@ package com.example.kusa_game;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,8 +21,9 @@ public class Game3 extends AppCompatActivity {
     TextView point;
     TextView print1;
     TextView print2;
+    TextView GameOver;
 
-
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -31,7 +33,10 @@ public class Game3 extends AppCompatActivity {
         point = (TextView)findViewById(R.id.point);
         print1 = (TextView) findViewById(R.id.button1);
         print2 = (TextView) findViewById(R.id.button2);
+        GameOver = (TextView)findViewById(R.id.GO);
 
+        num1 = set[0];
+        num2 = set[1];
 
         Button button1 = (Button)findViewById(R.id.button1);
         print1.setText("" + num1);
@@ -41,7 +46,7 @@ public class Game3 extends AppCompatActivity {
                 // numHave = changeText(num1);
                 numHave += num1;
                 setNum();
-                num1 = set[0];
+                //num1 = set[0];
             }
         });
 
@@ -55,17 +60,14 @@ public class Game3 extends AppCompatActivity {
             }
         });
 
-        num1 = set[0];
-        num2 = set[1];
-
     }
 
     public int changeText(int pushnum){
         numHave += pushnum;
         point.setText(""+ numHave);
-        if(numHave>=10){
+        if((numHave<= -10)||(10<=numHave)){
             //GameOver 画面に表示
-            point.setText("GameOver");
+            GameOver.setText("GameOver");
         }else{
             setNum();
         }
