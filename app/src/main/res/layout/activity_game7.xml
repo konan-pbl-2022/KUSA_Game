@@ -6,4 +6,128 @@
     android:layout_height="match_parent"
     tools:context=".Game7">
 
+<TextView
+    android:id="@+id/TitleText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.058" />
+
+<Button
+    android:id="@+id/Gmae_1Button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="スタート！"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.775" />
+
+<Button
+    android:id="@+id/BackMainButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="メイン画面に戻る"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.901" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="https://chicodeza.com/freeitems/torannpu-illust.html"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.991" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="使用画像元リンク"
+    app:layout_constraintBottom_toTopOf="@+id/textView2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.986" />
+
+<ImageView
+    android:id="@+id/list_card_view"
+    android:layout_width="134dp"
+    android:layout_height="186dp"
+    android:padding="3dp"
+    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.614" />
+
+    <ImageButton
+        android:id="@+id/selectleftButton"
+        android:layout_width="142dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="#00FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/list_card_view_right"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageButton
+    android:id="@+id/selectrightButton"
+    android:layout_width="122dp"
+    android:layout_height="187dp"
+    android:background="#00FFFFFF"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.884"
+    app:layout_constraintStart_toEndOf="@+id/selectleftButton"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.156"
+    app:srcCompat="@android:drawable/checkbox_off_background" />
+
+<ImageView
+    android:id="@+id/list_card_view_left"
+    android:layout_width="134dp"
+    android:layout_height="186dp"
+    android:padding="3dp"
+    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.061"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.157" />
+
+<ImageView
+    android:id="@+id/list_card_view_right"
+    android:layout_width="134dp"
+    android:layout_height="186dp"
+    android:padding="3dp"
+    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.981"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.157" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

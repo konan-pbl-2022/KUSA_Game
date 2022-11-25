@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="card_list">
+        <item>@drawable/joker</item>                //配列[0]
+
+        <item>@drawable/clover_1</item>             //配列[1] = 1
+        <item>@drawable/clover_2</item>             //配列[2] = 2
+        <item>@drawable/clover_3</item>             //配列[3] = 3
+        <item>@drawable/clover_4</item>             //配列[4] = 4
+        <item>@drawable/clover_5</item>             //配列[5] = 5
+        <item>@drawable/clover_6</item>             //配列[6] = 6
+        <item>@drawable/clover_7</item>             //配列[7] = 7
+        <item>@drawable/clover_8</item>             //配列[8] = 8
+        <item>@drawable/clover_9</item>             //配列[9] = 9
+        <item>@drawable/clover_10</item>            //配列[10] = 10
+        <item>@drawable/clover_12</item>            //配列[11] = 11
+        <item>@drawable/clover_12</item>            //配列[12] = 12
+        <item>@drawable/clover_13</item>            //配列[13] = 13
+
+        <item>@drawable/diamond_1</item>            //配列[14] = 1
+        <item>@drawable/diamond_2</item>            //配列[15] = 2
+        <item>@drawable/diamond_3</item>            //配列[16] = 3
+        <item>@drawable/diamond_4</item>            //配列[17] = 4
+        <item>@drawable/diamond_5</item>            //配列[18] = 5
+        <item>@drawable/diamond_6</item>            //配列[19] = 6
+        <item>@drawable/diamond_7</item>            //配列[20] = 7
+        <item>@drawable/diamond_8</item>            //配列[21] = 8
+        <item>@drawable/diamond_9</item>            //配列[22] = 9
+        <item>@drawable/diamond_10</item>           //配列[23] = 10
+        <item>@drawable/diamond_11</item>           //配列[24] = 11
+        <item>@drawable/diamond_12</item>           //配列[25] = 12
+        <item>@drawable/diamond_13</item>           //配列[26] = 13
+
+        <item>@drawable/spade_1</item>              //配列[27] = 1
+        <item>@drawable/spade_2</item>              //配列[28] = 2
+        <item>@drawable/spade_3</item>              //配列[29] = 3
+        <item>@drawable/spade_4</item>              //配列[30] = 4
+        <item>@drawable/spade_5</item>              //配列[31] = 5
+        <item>@drawable/spade_6</item>              //配列[32] = 6
+        <item>@drawable/spade_7</item>              //配列[33] = 7
+        <item>@drawable/spade_8</item>              //配列[34] = 8
+        <item>@drawable/spade_9</item>              //配列[35] = 9
+        <item>@drawable/spade_10</item>             //配列[36] = 10
+        <item>@drawable/spade_11</item>             //配列[37] = 11
+        <item>@drawable/spade_12</item>             //配列[38] = 12
+        <item>@drawable/spade_13</item>             //配列[39] = 13
+
+        <item>@drawable/heart_1</item>              //配列[40] = 1
+        <item>@drawable/heart_2</item>              //配列[41] = 2
+        <item>@drawable/heart_3</item>              //配列[42] = 3
+        <item>@drawable/heart_4</item>              //配列[43] = 4
+        <item>@drawable/heart_5</item>              //配列[44] = 5
+        <item>@drawable/heart_6</item>              //配列[45] = 6
+        <item>@drawable/heart_7</item>              //配列[46] = 7
+        <item>@drawable/heart_8</item>              //配列[47] = 8
+        <item>@drawable/heart_9</item>              //配列[48] = 9
+        <item>@drawable/heart_10</item>             //配列[49] = 10
+        <item>@drawable/heart_11</item>             //配列[50] = 11
+        <item>@drawable/heart_12</item>             //配列[51] = 12
+        <item>@drawable/heart_13</item>             //配列[52] = 13
+
+
+    </array>
+</resources>
