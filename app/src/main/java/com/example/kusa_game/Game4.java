@@ -24,10 +24,12 @@ public class Game4 extends AppCompatActivity {
         });
 
 //説明画面に移動するボタンの設定
-        Button button2 = findViewById(R.id.button2);
-        button2.setOnClickListener(view -> {
-            TextView textView = findViewById(R.id.textView2);
-            textView.setText("説明");
-        });
+//        Button button2 = findViewById(R.id.button2);
+//        button2.setOnClickListener(view -> {
+//            TextView textView = (TextView)findViewById(R.id.textView2);
+//            textView.setText("説明");
+//        });
     }
+    
+
 }
