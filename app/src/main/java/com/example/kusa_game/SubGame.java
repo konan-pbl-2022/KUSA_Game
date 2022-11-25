@@ -277,20 +277,8 @@ public class SubGame extends AppCompatActivity {
         }
 
 
-//        if( count == 100 ) {
-//            option1.setLooping(true);
         option1.start();
-//            option1.stop();
-//            option1.reset();
-//            // リソースの解放
-//            option1.release();
-//        }
-//        if( count == 300 ) {
-//            option1.stop();
-//            option1.reset();
-//            // リソースの解放
-//            option1.release();
-//        }
+
 
 
         try(AssetFileDescriptor afdescripter = getAssets().openFd(filePath_wind))
@@ -715,24 +703,6 @@ public class SubGame extends AppCompatActivity {
                     }
 
 
-                    /*back_Button.setVisibility(View.VISIBLE);
-                    back_Button.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            count = 0;
-                            line = random.nextInt(400)+500;
-                            back_Button.setVisibility(View.GONE);
-                            textView_result.setText((zero));
-                            textView_action.setText((zero));
-                            timer = new Timer();
-
-                            timerTask = new CountUpTimerTask();
-
-                            timer.schedule(timerTask, delay, period);
-
-
-                        }
-                    });*/
 
                 }
 
