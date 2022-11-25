@@ -75,10 +75,10 @@ public class Game5 extends AppCompatActivity {
 
     void decideGame(int playerHand, int opponentHand, TextView decidetext) {
         String decision;
-        if (playerHand == opponentHand) decision = "あいこ";
+        if (playerHand == opponentHand) decision = "あいこだよ！もう一度！";
         else if ((playerHand == 3 && opponentHand == 1) || (playerHand + 1 == opponentHand))
-            decision = "勝ち";
-        else decision = "負け";
+            decision = "やったね！勝ちだ！";
+        else decision = "残念...負け";
         decidetext.setText(decision);
 
     }
