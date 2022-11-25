@@ -6,17 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kusa" />
+
     <Button
         android:id="@+id/button4"
         android:layout_width="139dp"
         android:layout_height="103dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:text="Button"
+        android:text="爆弾ゲーム"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.184" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <Button
         android:id="@+id/button2"
@@ -24,7 +34,7 @@
         android:layout_height="103dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:text="Button"
+        android:text="海流脱走"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +45,7 @@
         android:layout_width="393dp"
         android:layout_height="85dp"
         android:text="KUSA_GAME"
-        android:textColor="#52B656"
+        android:textColor="#D61709"
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,7 +59,7 @@
         android:id="@+id/button"
         android:layout_width="139dp"
         android:layout_height="103dp"
-        android:text="Button"
+        android:text="見切れ！！居合道"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,19 +70,19 @@
         android:id="@+id/button3"
         android:layout_width="139dp"
         android:layout_height="103dp"
-        android:text="Button"
+        android:text="キープ±１０"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.184" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="139dp"
         android:layout_height="103dp"
-        android:text="Button"
+        android:text="じゃんけん"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.172"
@@ -84,7 +94,7 @@
         android:id="@+id/button6"
         android:layout_width="139dp"
         android:layout_height="103dp"
-        android:text="Button"
+        android:text="宝探し"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.852"

@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Game2_game extends AppCompatActivity
         implements View.OnTouchListener{
@@ -52,10 +53,40 @@ public class Game2_game extends AppCompatActivity
                 break;
         }
 
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        textView2.setVisibility(View.VISIBLE);
+        TextView textView4 = (TextView) findViewById(R.id.textView4);
+        textView4.setVisibility(View.VISIBLE);
+        if(newDx  < 1000 && newDy < 400){
+            textView2.setText("漂着！");
+        } else if(newDx < 1000 && newDy > 1500){
+            textView4.setText("一生漂流！");
+        } else if(newDx <300 && newDy <700){
+            textView4.setText("一生漂流！");
+        } else if(newDx <700 && newDy <600){
+            textView4.setText("一生漂流！");
+        } else if(newDx >900 && newDy >500){
+            textView4.setText("一生漂流！");
+        } else if(newDx <600 && newDy < 900 && newDx >500 && newDy >500){
+            textView4.setText("一生漂流");
+        }
+
         // タッチした位置を古い位置とする
         preDx = newDx;
         preDy = newDy;
 
         return true;
     }
+
+//    public void changePos(){
+//        hitCheck();
+//    }
+//    public void hitCheck(){
+//
+//    }
+//
+//    @Override
+//    public boolean onTouchEvent(MotionEvent event){
+//
+//    }
 }
