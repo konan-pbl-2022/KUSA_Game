@@ -108,7 +108,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton3 = (ImageButton) findViewById(R.id.BombButton3);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb3){
@@ -129,7 +129,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton4 = (ImageButton) findViewById(R.id.BombButton4);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb4){
@@ -150,7 +150,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton5 = (ImageButton) findViewById(R.id.BombButton5);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb5){
@@ -171,7 +171,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton6 = (ImageButton) findViewById(R.id.BombButton6);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb6){
@@ -192,7 +192,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton7 = (ImageButton) findViewById(R.id.BombButton7);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb7){
@@ -213,7 +213,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton8 = (ImageButton) findViewById(R.id.BombButton8);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb8){
@@ -234,7 +234,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton9 = (ImageButton) findViewById(R.id.BombButton9);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb9){
@@ -255,7 +255,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton10 = (ImageButton) findViewById(R.id.BombButton10);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb10){
@@ -276,7 +276,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton11 = (ImageButton) findViewById(R.id.BombButton11);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb11){
@@ -297,7 +297,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton12 = (ImageButton) findViewById(R.id.BombButton12);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb12){
@@ -318,7 +318,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton13 = (ImageButton) findViewById(R.id.BombButton13);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb13){
@@ -339,7 +339,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton14 = (ImageButton) findViewById(R.id.BombButton14);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb14){
@@ -360,7 +360,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton15 = (ImageButton) findViewById(R.id.BombButton15);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb15){
@@ -381,7 +381,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton16 = (ImageButton) findViewById(R.id.BombButton16);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb16){
@@ -402,7 +402,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton17 = (ImageButton) findViewById(R.id.BombButton17);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb17){
@@ -423,7 +423,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton18 = (ImageButton) findViewById(R.id.BombButton18);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb18){
@@ -444,7 +444,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton19 = (ImageButton) findViewById(R.id.BombButton19);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb19){
@@ -465,7 +465,7 @@ public class Game4Play extends AppCompatActivity {
         });
 
         ImageButton imageButton20 = (ImageButton) findViewById(R.id.BombButton20);
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( random != bomb20){
