@@ -106,7 +106,7 @@
         android:id="@+id/button7"
         android:layout_width="139dp"
         android:layout_height="103dp"
-        android:text="Button"
+        android:text="トランプ数字"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
